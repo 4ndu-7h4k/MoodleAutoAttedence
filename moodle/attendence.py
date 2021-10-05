@@ -9,7 +9,12 @@ from pytz import timezone
 format = "%I:%M:%S"
 
 class attendence(course):
+    
     def get_attendence_url(self,curl):
+        """
+        Returns attendence url from course page
+        :params course url
+        """
         r=self.reqUrl(curl)
         soup = BeautifulSoup(r.text,'html.parser')
         atturl = [aurl["href"] for aurl in soup.select('a[href^="http://moodle.mec.ac.in/mod/attendance/view.php?id="]')]
@@ -35,7 +40,6 @@ class attendence(course):
             attpayload['sessid']   = parse_qs(query_string)['sessid'][0]
             attpayload['sesskey']  = [parse_qs(query_string)['sesskey'][0],parse_qs(query_string)['sesskey'][0]]
             query_string = urlparse(atturl).query
-            attid = parse_qs(query_string)['id'][0]
             r = self.session.post(url_to_parse,data=attpayload)
             if r.url == atturl:
                 now_utc = datetime.now(timezone('UTC'))

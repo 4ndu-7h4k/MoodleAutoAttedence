@@ -18,7 +18,7 @@
         "required": false
       },
       "SEMID": {
-        "description": "Select your semester from http://moodle.mec.ac.in/course/index.php?categoryid=4,then check url for semid  eg:moodle.mec/../categoryid=28( '28' ,categoryid is the semid) ",
+        "description": "Select your semester from https://moodle.mec.ac.in/course/index.php,then check url for semid  eg:moodle.mec/../categoryid=28( '28' ,categoryid is the semid) ",
         "required": true
       },
       "START_TIME": {

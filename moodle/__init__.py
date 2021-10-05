@@ -8,7 +8,6 @@ if sys.version_info[0] < 3:
     log.error("You must need atleast python version > 3.x")
     sys.exit(1)
 
-###########COLOR-CODE############
 HEADER = '\033[95m'
 BLUE = '\033[94m'
 CYAN = '\033[96m'
