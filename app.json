@@ -23,7 +23,7 @@
       },
       "START_TIME": {
         "description": "Class starting time (UTC or local machine timezone) default = '02:01'(08:31)",
-        "value" : "02:01",
+        "value" : "03:01",
         "required": false
       },
       "END_TIME": {
