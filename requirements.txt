@@ -1,6 +1,6 @@
-requests
-python-telegram-bot
 bs4
-schedule
-pytz
 python-dotenv
+python-telegram-bot
+pytz
+requests
+schedule

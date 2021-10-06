@@ -36,7 +36,7 @@
         "value" : "None",
         "required": false
       },
-      
+
       "CHAT_ID": {
         "description": "Your Telegram unique chat_id or @username (settings->ID or username)",
         "value" : "None",
